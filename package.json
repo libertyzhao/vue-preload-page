@@ -1,9 +1,9 @@
 {
   "name": "vue-preload-page",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "预加载vue的页面js文件",
-  "main": "src/main",
-  "module": "src/main",
+  "main": "./public/static/bundle.js",
+  "module": "./public/static/bundle.js",
   "scripts": {
     "dev": "./node_modules/.bin/rollup -c build/rollup.demo.config.js --watch",
     "demo": "./node_modules/.bin/rimraf public/static && NODE_ENV=production ./node_modules/.bin/rollup -c build/rollup.demo.config.js",
@@ -56,8 +56,5 @@
     "rollup-plugin-serve": "^0.4.2",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-watch": "^4.3.1"
-  },
-  "dependencies": {
-    "vue": "^2.5.16"
   }
 }

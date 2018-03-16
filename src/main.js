@@ -1,6 +1,5 @@
-import Vue from "vue";
 
-function setData(route, from, next) {
+function setData(route, from, next, Vue) {
   const matchedComponents = router.getMatchedComponents(route);
   if (!matchedComponents.length) {
     next();
@@ -42,12 +41,12 @@ function preloadJs(pre, router) {
   }, 1000);
 }
 
-export default router => {
+export default (router,Vue) => {
   router.onReady(() => {
     const route = router.resolve(location.pathname + location.search).route;
-    setData(undefined, {}, () => {});
+    setData(undefined, {}, () => {},Vue);
     router.beforeResolve((to, from, next) => {
-      setData(to, from, next);
+      setData(to, from, next, Vue);
     });
   });
 };

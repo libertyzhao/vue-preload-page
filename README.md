@@ -9,10 +9,12 @@ import vuePreload from 'vue-preload-page';
 vuePreload(router);
 ```
 然后在组件处配置一下，比如你想在a页面预加载其他页面的js，就配置一下它们的路由到数组中就行。
+
 <br>
 <img width="350"  src="https://raw.githubusercontent.com/liberties/vue-proload-page/master/static/1.jpg"/>
 
 可以发现浏览该页面的时候，会自动延迟下载配置的其他页面
+
 <br>
 <img width="350"  src="https://raw.githubusercontent.com/liberties/vue-proload-page/master/static/2.jpg"/>
 

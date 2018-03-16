@@ -10,11 +10,11 @@ vuePreload(router);
 ```
 然后在组件处配置一下，比如你想在a页面预加载其他页面的js，就配置一下它们的路由到数组中就行。
 <br>
-<img width="350"  src="https://raw.githubusercontent.com/liberties/vue-proload-page/master/static/1.jpg"/>
+<img width="500"  src="https://raw.githubusercontent.com/liberties/vue-proload-page/master/static/1.jpg"/>
 
 可以发现浏览该页面的时候，会自动延迟下载配置的其他页面
 <br>
-<img width="350"  src="https://raw.githubusercontent.com/liberties/vue-proload-page/master/static/2.jpg"/>
+<img width="500"  src="https://raw.githubusercontent.com/liberties/vue-proload-page/master/static/2.jpg"/>
 
 ps：这里和mini-ls搭配更佳，目前实现了一整套方案，可以缓存静态js、缓存api接口到本地，然后加上预加载js，优化效果感觉还不错。
 

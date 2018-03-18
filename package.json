@@ -1,6 +1,6 @@
 {
   "name": "vue-preload-page",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "预加载vue的页面js文件",
   "main": "./lib/index.min.js",
   "module": "./lib/index.min.js",

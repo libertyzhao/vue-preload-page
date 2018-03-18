@@ -9,7 +9,7 @@ export default [{
   name: moduleName,
   output: {
     file: 'lib/index.js',
-    format: 'umd',
+    format: 'es',
     exports: 'named',
     sourcemap: false
   },
@@ -35,7 +35,7 @@ export default [{
   name: moduleName,
   output: {
     file: 'lib/index.min.js',
-    format: 'umd',
+    format: 'es',
     exports: 'named',
     sourcemap: false
   },

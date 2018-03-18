@@ -14,6 +14,7 @@ import filesize from 'rollup-plugin-filesize';
 import postcss from 'rollup-plugin-postcss';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
+import { minify } from 'uglify-es';
 
 const plugins = {
   progress (opt) {
@@ -55,7 +56,7 @@ const plugins = {
     });
   },
   uglify (opt) {
-    return uglify(opt);
+    return uglify(opt,minify);
   },
   filesize () {
     return filesize();

@@ -43,7 +43,6 @@ function preloadJs(pre, router) {
 
 export default (router,Vue) => {
   router.onReady(() => {
-    const route = router.resolve(location.pathname + location.search).route;
     setData(undefined, {}, () => {},Vue);
     router.beforeResolve((to, from, next) => {
       setData(to, from, next, Vue);
